@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/task
+
+###
+POST http://localhost:3000/api/task
+content-type: application/json
+
+{
+  "title": "sample",
+  "detail": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+PUT http://localhost:3000/api/task
+content-type: application/json
+
+{
+  "id": "61c0011113f1779f3739747f",
+  "title": "new sample",
+  "detail": "task detail has been updated"
+}
+
+###
+DELETE http://localhost:3000/api/task
+content-type: application/json
+
+{
+  "id": "61c0011113f1779f3739747f"
+}
+
+
