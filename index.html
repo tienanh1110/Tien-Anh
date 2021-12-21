@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+  </head>
+  <body class="bg-dark">
+    <div class="container bg-light p-5 rounded my-4">
+      <h1 id="form-title">Add new task</h1>
+      <form>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title" required />
+        </div>
+        <div class="mb-3">
+          <label for="detail" class="form-label">Detail</label>
+          <textarea class="form-control" id="detail" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="add-task">
+          add task
+        </button>
+      </form>
+    </div>
+    <div class="container bg-white p-5 rounded">
+      <ul class="p-0" id="task-list">
+        <h1 id="task-list-placeholder">
+          You don't have any tasks, let's add more !
+        </h1>
+        <!-- Task Template -->
+
+        <!-- <li class="card mb-3" id="${id}">
+          <div class="card-header bg-primary">
+            <div class="row">
+              <h5 class="h5 text-white col">${title}</h5>
+              <input
+                class="col"
+                type="text"
+                class="form-control title-input"
+                required
+                hidden
+              />
+              <div class="col text-right">
+                <button class="btn btn-success update-btn">Update</button>
+                <button class="btn btn-danger delete-btn">Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text">${detail}</p>
+            <textarea
+              class="form-control detail-input"
+              id="detail"
+              required
+              hidden
+            ></textarea>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
